@@ -63,7 +63,6 @@ The technical and policy review information below was recorded on the date obser
 - [Fanplayr](#Fanplayr)
 - [Fiksu](#Fiksu)
 - [FingerprintJS](#FingerprintJS)
-- [Flocktory](#Flocktory)
 - [Flux](#Flux)
 - [Foresee](#Foresee)
 - [Friends2Follow](#Friends2Follow)
@@ -123,15 +122,16 @@ The technical and policy review information below was recorded on the date obser
 - [PinPoll](#PinPoll)
 - [PixAnalytics](#PixAnalytics)
 - [Pixlee](#Pixlee)
-- [Playwire](#Playwire)
 - [Polen](#Polen)
 - [PrometheusIntelligenceTechnology](#PrometheusIntelligenceTechnology)
 - [Protected-Media](#Protected-Media)
+- [QIWIGroup](#QIWIGroup)
 - [Radware](#Radware)
 - [RazorPay](#RazorPay)
 - [Rollick](#Rollick)
 - [RoqAd](#RoqAd)
 - [Salesforce](#Salesforce)
+- [SardineAI](#SardineAI)
 - [Semantiqo](#Semantiqo)
 - [SendPulse](#SendPulse)
 - [ShaftTraffic](#ShaftTraffic)
@@ -635,7 +635,7 @@ Raw log:
 [Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
 
 ## Akamai
-This service has been classified as `Content`, `Analytics`, `Advertising` and `FingerprintingInvasive` for the following reasons:
+This service has been classified as `Content`, `Analytics` and `FingerprintingInvasive` for the following reasons:
 ### Technical Review
 Script: `https://pxlclnmdecom-a.akamaihd.net/javascripts/browserfp.min.js?templateId=3&customerId=8CUC163X0`
 1. Script makes calls to known invasive fingerprinting APIs.These API calls were observed using [OpenWPM](https://github.com/mozilla/OpenWPM):
@@ -1273,7 +1273,7 @@ var audioTimeoutId$jscomp$0 = setTimeout(function() {
 [Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
 
 ## BrowserAnalytic
-This service has been classified as `Analytics` and `FingerprintingInvasive` for the following reasons:
+This service has been classified as `Anti-fraud` and `FingerprintingInvasive` for the following reasons:
 ### Technical Review
 Script: `https://static.browseranalytic.com/js/d3d3LmNhamFtYXIuZXM=/44b73fa0/bcaptcha.js`
 1. Script makes calls to known invasive fingerprinting APIs.These API calls were observed using [OpenWPM](https://github.com/mozilla/OpenWPM):
@@ -1763,7 +1763,7 @@ Script: `http://franecki.net/js/lib.js`
 [Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
 
 ## ClickGuard
-This service has been classified as `Anti-fraud`, `Advertising` and `FingerprintingInvasive` for the following reasons:
+This service has been classified as `Advertising` and `FingerprintingInvasive` for the following reasons:
 ### Technical Review
 Script: `https://io.clickguard.com/s/cHJvdGVjdG9y/KsNIeBlt`
 1. Script embeds or includes snippets of an open source fingerprinting library, [fingerprintjs2](https://github.com/Valve/fingerprintjs2):
@@ -2366,41 +2366,6 @@ Script: `https://openfpcdn.io/fingerprintjs/v3/iife.min.js`
 |https://openfpcdn.io/fingerprintjs/v3/iife.min.js|8|window.navigator.oscpu|None|Intel Mac OS X 10.15|
 |https://openfpcdn.io/fingerprintjs/v3/iife.min.js|8|window.navigator.platform|None|MacIntel|
 |https://openfpcdn.io/fingerprintjs/v3/iife.min.js|8|window.navigator.plugins|None|{"0":{"0":{},"1":{}},"1":{"0":"object","1":"object"},"2":{"0":"object","1":"object"},"3":{"0":"object","1":"object"},"4":{"0":"object","1":"object"}}|
-
-[Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
-
-## Flocktory
-This service has been classified as `Advertising` and `FingerprintingGeneral` for the following reasons:
-### Policy Review
-Flocktory's privacy policy States:
-
-`https://www.flocktory.com/en/data_privacy/`
-
->As a Flocktory client, you are a Data Controller and Flocktory is acting as your Data Processor for your users’ data. Flocktory collects and processes data of website visitors and their usage of the website with the purpose of:
->-   Analysis and profiling of data subjects
->-   Fulfilling its contractual obligations with its clients for services that improve the user experience on the client website.
->-   Improve our own website experience and services
->-   Electronic direct marketing
-
-
->Data that Flocktory collects may include:
->-   Online identifiers (cookies, device, browser information)
->-   Geographic location (country, region, city)
->-   Data about social media accounts
->-   Data about purchases
->-   Data about visited pages
->-   Data about membership / registration status
-
-Flocktory's website states:
-
-`https://www.flocktory.com/en/about-us/`
-
->Our solutions come as a complete platform which addresses the entire customer journey and use newest technology and communication channels.
-
-'https://www.flocktory.com/en/platform/'
-
->Flocktory tracks millions of data points every single day and combines user behavior and customer shopping history with strong cohort analysis and predictive algorithms to support and automate your business decisions
-
 
 [Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
 
@@ -4166,7 +4131,7 @@ Script: `https://cdn.simility.com/b.js`
 [Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
 
 ## HumanSecurity
-This service has been classified as `Analytics`, `Anti-fraud` and `FingerprintingInvasive` for the following reasons:
+This service has been classified as `Anti-fraud` and `FingerprintingInvasive` for the following reasons:
 ### Policy Review
 1. PerimeterX Bot Defender provides bot detection using network and behavorial analysis. 
 
@@ -4264,6 +4229,20 @@ This service has been classified as `Analytics`, `Anti-fraud` and `Fingerprintin
             }
         }
 ```
+Script: `https://client.px-cloud.net/PXzYvFOXaC/main.min.js`
+1. Script makes calls to known invasive fingerprinting APIs.These API calls were observed using [OpenWPM](https://github.com/mozilla/OpenWPM):
+
+|script_url|script_line|symbol|arguments|value|
+|--|--|--|--|--|
+|https://client.px-cloud.net/PXzYvFOXaC/main.min.js|4|CanvasRenderingContext2D.fillText|[""😇"",64,8]||
+|https://client.px-cloud.net/PXzYvFOXaC/main.min.js|4|HTMLCanvasElement.toDataURL|None||
+|https://client.px-cloud.net/PXzYvFOXaC/main.min.js|4|OfflineAudioContext.createOscillator|None||
+|https://client.px-cloud.net/PXzYvFOXaC/main.min.js|4|OscillatorNode.type|None|sine|
+|https://client.px-cloud.net/PXzYvFOXaC/main.min.js|7|window.navigator.hardwareConcurrency|None|8|
+|https://client.px-cloud.net/PXzYvFOXaC/main.min.js|2|window.navigator.oscpu|None|Intel Mac OS X 10.15|
+|https://client.px-cloud.net/PXzYvFOXaC/main.min.js|6|window.navigator.platform|None|MacIntel|
+|https://client.px-cloud.net/PXzYvFOXaC/main.min.js|3|window.navigator.plugins|None|{""0"":{""0"":{},""1"":{}},""1"":{""0"":""object"",""1"":""object""},""2"":{""0"":""object"",""1"":""object""},""3"":{""0"":""object"",""1"":""object""},""4"":{""0"":""object"",""1"":""object""}}|
+|https://client.px-cloud.net/PXzYvFOXaC/main.min.js|2|window.navigator.userAgent|None|Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:108.0) Gecko/20100101 Firefox/108.0|
 [Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
 
 ## PinPoll
@@ -4359,25 +4338,6 @@ Script: `https://assets.pixlee.com/assets/pixlee_widget_1_0_0.js`
     }
 
 ```
-[Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
-
-## Playwire
-This service has been classified as `Advertising` and `FingerprintingInvasive` for the following reasons:
-### Technical Review
-Script: `https://cdn.intergient.com/pageos/1.9.16/595.6fce560e7fa7815d2879.js`
-1. Script makes calls to known invasive fingerprinting APIs.These API calls were observed using [OpenWPM](https://github.com/mozilla/OpenWPM):
-
-|script_url|script_line|symbol|arguments|value|
-|--|--|--|--|--|
-|https://cdn.intergient.com/pageos/1.9.16/595.6fce560e7fa7815d2879.js|1|CanvasRenderingContext2D.fillText|["Cwm fjordbank gly 😃",2,15]||
-|https://cdn.intergient.com/pageos/1.9.16/595.6fce560e7fa7815d2879.js|1|HTMLCanvasElement.toDataURL|None||
-|https://cdn.intergient.com/pageos/1.9.16/595.6fce560e7fa7815d2879.js|1|OfflineAudioContext.createOscillator|None||
-|https://cdn.intergient.com/pageos/1.9.16/595.6fce560e7fa7815d2879.js|1|OscillatorNode.type|None|triangle|
-|https://cdn.intergient.com/pageos/1.9.16/595.6fce560e7fa7815d2879.js|1|window.navigator.hardwareConcurrency|None|8|
-|https://cdn.intergient.com/pageos/1.9.16/595.6fce560e7fa7815d2879.js|1|window.navigator.oscpu|None|Intel Mac OS X 10.15|
-|https://cdn.intergient.com/pageos/1.9.16/595.6fce560e7fa7815d2879.js|1|window.navigator.platform|None|MacIntel|
-|https://cdn.intergient.com/pageos/1.9.16/595.6fce560e7fa7815d2879.js|1|window.navigator.plugins|None|{"0":{"0":{},"1":{}},"1":{"0":"object","1":"object"},"2":{"0":"object","1":"object"},"3":{"0":"object","1":"object"},"4":{"0":"object","1":"object"}}|
-
 [Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
 
 ## Polen
@@ -4585,6 +4545,41 @@ Script: `https://js.ad-score.com/score.min.js?pid=1000569#tid=&l1=&l2=&l2=&l3=&l
 ```
 [Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
 
+## QIWIGroup
+This service has been classified as `Advertising` and `FingerprintingGeneral` for the following reasons:
+### Policy Review
+Flocktory's privacy policy States:
+
+`https://www.flocktory.com/en/data_privacy/`
+
+>As a Flocktory client, you are a Data Controller and Flocktory is acting as your Data Processor for your users’ data. Flocktory collects and processes data of website visitors and their usage of the website with the purpose of:
+>-   Analysis and profiling of data subjects
+>-   Fulfilling its contractual obligations with its clients for services that improve the user experience on the client website.
+>-   Improve our own website experience and services
+>-   Electronic direct marketing
+
+
+>Data that Flocktory collects may include:
+>-   Online identifiers (cookies, device, browser information)
+>-   Geographic location (country, region, city)
+>-   Data about social media accounts
+>-   Data about purchases
+>-   Data about visited pages
+>-   Data about membership / registration status
+
+Flocktory's website states:
+
+`https://www.flocktory.com/en/about-us/`
+
+>Our solutions come as a complete platform which addresses the entire customer journey and use newest technology and communication channels.
+
+'https://www.flocktory.com/en/platform/'
+
+>Flocktory tracks millions of data points every single day and combines user behavior and customer shopping history with strong cohort analysis and predictive algorithms to support and automate your business decisions
+
+
+[Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
+
 ## Radware
 This service has been classified as `Analytics` and `FingerprintingInvasive` for the following reasons:
 ### Technical Review
@@ -4711,6 +4706,26 @@ Salesforce's website states:
 >Once the User Match table has been constructed, the client’s first-party user ID can be used as an “Uber-ID” to create a joint profile of user activity across different browsers and devices. This joint profile can then be used in the segment building process allowing Audience Studio clients to build more comprehensive audience segments that can be leveraged across multiple devices.
 
 
+[Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
+
+## SardineAI
+This service has been classified as `Analytics` and `FingerprintingInvasive` for the following reasons:
+### Technical Review
+Script: `https://api.sardine.ai/assets/collector.min.5539dfb.js`
+1. Script makes calls to known invasive fingerprinting APIs.These API calls were observed using [OpenWPM](https://github.com/mozilla/OpenWPM):
+
+|script_url|script_line|symbol|arguments|value|
+|--|--|--|--|--|
+|https://api.sardine.ai/assets/collector.min.5539dfb.js|1|CanvasRenderingContext2D.fillText|[""Cwm fjordbank glyphs vext quiz, 😃"",4,45]||
+|https://api.sardine.ai/assets/collector.min.5539dfb.js|1|HTMLCanvasElement.toDataURL|None||
+|https://api.sardine.ai/assets/collector.min.5539dfb.js|1|OfflineAudioContext.createOscillator|None||
+|https://api.sardine.ai/assets/collector.min.5539dfb.js|1|OscillatorNode.type|None|triangle|
+|https://api.sardine.ai/assets/collector.min.5539dfb.js|1|RTCPeerConnection.setLocalDescription|[""{\""type\"":\""offer\"",\""sdp\"":\""v=0\\r\\no=mozilla...THIS_IS_SDPARTA-99.0 4497493048632180440 0 IN IP4 0.0.0.0\\r\\ns=-\\r\\nt=0 0\\r\\na=fingerprint:sha-256 E0:90:C1:13:D5:DE:54:69:02:18:4F:2E:A0:97:1F:EB:BC:D8:86:80:7B:DC:3A:F9:56:C5:B0:6F:2F:E1:B1:15\\r\\na=group:BUNDLE 0\\r\\na=ice-options:trickle\\r\\na=msid-semantic:WMS *\\r\\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\\r\\nc=IN IP4 0.0.0.0\\r\\na=sendrecv\\r\\na=ice-pwd:2d64b749f12d76f22271c91d89f5e858\\r\\na=ice-ufrag:bc8b16cf\\r\\na=mid:0\\r\\na=setup:actpass\\r\\na=sctp-port:5000\\r\\na=max-message-size:1073741823\\r\\n\""}""]||
+|https://api.sardine.ai/assets/collector.min.5539dfb.js|1|window.navigator.hardwareConcurrency|None|8|
+|https://api.sardine.ai/assets/collector.min.5539dfb.js|1|window.navigator.oscpu|None|Intel Mac OS X 10.15|
+|https://api.sardine.ai/assets/collector.min.5539dfb.js|1|window.navigator.platform|None|MacIntel|
+|https://api.sardine.ai/assets/collector.min.5539dfb.js|1|window.navigator.plugins|None|{""0"":{""0"":{},""1"":{}},""1"":{""0"":""object"",""1"":""object""},""2"":{""0"":""object"",""1"":""object""},""3"":{""0"":""object"",""1"":""object""},""4"":{""0"":""object"",""1"":""object""}}|
+|https://api.sardine.ai/assets/collector.min.5539dfb.js|1|window.navigator.userAgent|None|Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:108.0) Gecko/20100101 Firefox/108.0|
 [Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
 
 ## Semantiqo
@@ -5193,7 +5208,7 @@ Submission source: Submitted for review by Mozilla (2020-06-25_v10-Fingerprinter
 [Go back to top](#tracker-descriptions-for-fingerprinters-and-cryptominers)
 
 ## Stripe
-This service has been classified as `Content`, `Anti-fraud` and `FingerprintingInvasive` for the following reasons:
+This service has been classified as `Content`, `Advertising` and `FingerprintingInvasive` for the following reasons:
 ### Technical Review
 Script: `https://m.stripe.network/inner.html#referrer=&title=Study.com%20%7C%20Take%20Online%20Courses.%20Earn%20College%20Credit.%20Research%20Schools%2C%20Degrees%20%26%20Careers&url=https%3A%2F%2Fstudy.com%2F&muid=739a3ba7-7618-41b6-b40c-af1890c68298&sid=d591e8f1-231b-42b4-9c18-c4d93cfd9552&preview=false&` 
 1. Script makes use of APIs for the purpose of fingerprinting:
